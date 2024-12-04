@@ -27,7 +27,7 @@ const Contact = (_: ContactProps) => {
             if (xhr.status === 200) {
               form.reset();
               setFinished(true);
-              window.gtag("event", "conversion", { send_to: "AW-16805749542/uJ6mCJW2w_IZEKbGzc0-" });
+              window.gtag("event", "conversion", { send_to: "AW-16805749542/QqRsCIOa_PEZEKbGzc0-" });
             } else {
               alert("Sorry, there was a problem sending your message. Please try again later.");
             }
