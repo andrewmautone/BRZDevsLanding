@@ -15,9 +15,10 @@ declare global {
 
 const Main = () => (
   useEffect(() => {
-    window.Tawk_API.onChatMessageVisitor(() => {
+    window.Tawk_API.onChatMessageVisitor = () => {
+      console.log("Chat message received");
       window.gtag("event", "conversion", { send_to: "AW-16805749542/Jfq-CMOh0vIZEKbGzc0-" });
-    });
+    };
   }, []),
   (
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style="font-family: Manrope, 'Noto Sans', sans-serif">
